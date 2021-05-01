@@ -2,7 +2,7 @@
 
 A repository for deploying Solidity smart contracts to EVM compatible chains.
 
-_Enabled by [Hardhat](https://hardhat.org/)_
+_Leveraging [Hardhat](https://hardhat.org/) and [Open Zeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts)_
 
 ## Requirements
 
@@ -44,7 +44,7 @@ To add a network to the configuration file, add an object key under `networks` w
 For example, to deploy `ERC20.sol` to the `Kovan` testnet:
 
 ```shell script
-npx hardhat deploy --network kovan --tags ERC-20
+npx hardhat deploy --network kovan --tags ERC20
 ```
 
 A deployment will be recorded in the `deployments/` folder under the relevant network.
