@@ -47,7 +47,7 @@ For example, to deploy `ERC20.sol` to the `Kovan` testnet:
 npx hardhat deploy --network kovan --tags ERC20
 ```
 
-A deployment will be recorded in the `deployments/` folder under the relevant network.
+A deployment will be recorded in the `deployments/` folder under the relevant network with the contract address and EVM bytecode.
 
-Adding the `--reset` option to the above command resets the deployments from scratch – ignoreing
+Adding the `--reset` option to the above command resets the deployments from scratch – ignoring
 previous deployments and deleting them from the disk.
