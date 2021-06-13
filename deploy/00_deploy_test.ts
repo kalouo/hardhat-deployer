@@ -10,7 +10,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
 
   await deploy('ERC20', {
     from: deployer,
-    args: ['Zips', 'ZIP'],
+    args: ['Medium', 'MDM'],
     log: true,
   });
 };

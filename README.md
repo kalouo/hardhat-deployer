@@ -1,4 +1,4 @@
-# zipmex-hardhat
+# hardhat-deployer
 
 A repository for deploying Solidity smart contracts to EVM compatible chains.
 
