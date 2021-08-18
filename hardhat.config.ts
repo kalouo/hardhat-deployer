@@ -1,5 +1,7 @@
 import '@nomiclabs/hardhat-waffle';
 import '@nomiclabs/hardhat-ethers';
+import '@nomiclabs/hardhat-etherscan';
+
 import 'hardhat-deploy';
 
 import * as dotenv from 'dotenv';
@@ -7,7 +9,7 @@ import { HardhatUserConfig } from 'hardhat/config';
 
 dotenv.config();
 
-const { DEPLOYER_PRIVATE_KEY, INFURA_PROJECT_ID } = process.env;
+const { DEPLOYER_PRIVATE_KEY, INFURA_PROJECT_ID, ETHERSCAN_API_KEY } = process.env;
 
 const config: HardhatUserConfig = {
   solidity: '0.8.3',
@@ -32,6 +34,9 @@ const config: HardhatUserConfig = {
       chainId: 56,
       accounts: [`0x${DEPLOYER_PRIVATE_KEY}`],
     },
+  },
+  etherscan: {
+    apiKey: ETHERSCAN_API_KEY,
   },
   namedAccounts: {
     deployer: 0,
